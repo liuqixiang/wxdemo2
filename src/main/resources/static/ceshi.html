@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>
+		</style>
+		<meta charset="utf-8" />
+		<title></title>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+		<meta name="description" content="在这里为你的新网站写一个精彩的描述。您可以在_配置.yml中编辑此行。它会出现在你的文档头部meta（用于谷歌搜索结果）和你的feed.xml网站描述中。">
+		<link rel="stylesheet" href="lib/weui.min.css">
+		<link rel="stylesheet" href="css/jquery-weui.css">
+		<link rel="stylesheet" href="css/currency.css">
+		<link rel="stylesheet" href="css/project_style.css">
+	</head>
+	<body  ontouchstart >
+		<div class="container container_bgcolor">
+		    <header class='demos-header padding_top_bottom bgimges_pic1'>
+		    	<h1 class="demos-title font_size_22">普通高招录取批次证明</h1>
+		    	<p class='demos-sub-title'>只能开具2001年以后普通高招录取批次证明</p>
+		    </header>
+			<div class="weui-cells__title">基本信息</div>
+		    <div class="weui-cells weui-cells_form">
+				<div class="weui-cell">
+					<div class="weui-cell__hd">
+						<label for="" class="weui-label">考生姓名</label>
+					</div>
+					<div class="weui-cell__bd">
+						<input class="weui-input" type="text" value="" placeholder="*请输入考生姓名">
+					</div>
+				</div>
+				<div class="weui-cell">
+					<div class="weui-cell__hd">
+						<label for="" class="weui-label">身份证号</label>
+					</div>
+					<div class="weui-cell__bd">
+						<input class="weui-input" type="text" value="" placeholder="*请输入考生身份证号">
+					</div>
+				</div>
+				<div class="weui-cell">
+			        <div class="weui-cell__hd">
+			        	<label for="" class="weui-label">考生考号</label>
+			        </div>
+			        <div class="weui-cell__bd">
+			        	<input class="weui-input" type="number" pattern="[0-9]*" value="" placeholder="请输入考生考号">
+			        </div>
+			        <div class="weui-cell__ft">
+			        	<i class="weui-icon-warn"></i>
+			        </div>
+			    </div>				
+				<div class="weui-cell">
+					<div class="weui-cell__hd">
+						<label for="" class="weui-label">办理用途</label>
+					</div>
+					<div class="weui-cell__bd">
+						<input class="weui-input" type="text" value="" placeholder="*请输入办理用途">
+					</div>
+				</div>
+
+		        <div class="weui-cell">
+		            <div class="weui-cell__bd">
+		                <div class="weui-uploader">
+		                    <div class="weui-uploader__hd">
+		                        <p class="weui-uploader__title">上传证件</p>
+		                    </div>
+		                    <div class="weui-uploader__bd">
+		                        <ul class="weui-uploader__files" id="uploaderFiles">
+		
+		                            <!--<li class="weui-uploader__file weui-uploader__file_status" style="background-image:url(img/pic_160.png)">
+		                                <div class="weui-uploader__file-content">50%</div>
+		                            </li>-->
+		
+		                        </ul>
+		                        <div class="weui-uploader__input-box">
+		                            <input id="uploaderInput" class="weui-uploader__input" type="file" accept="image/*" multiple/>
+		                        </div>
+		                    </div>
+		                </div>
+		            </div>
+		        </div>
+		      
+		         <div class="weui-gallery" id="gallery"><!--这里是图片点击展示-->
+		            <span class="weui-gallery__img" id="galleryImg"></span>
+		            <div class="weui-gallery__opr">
+		                <a href="javascript:" class="weui-gallery__del">
+		                    <i class="weui-icon-delete weui-icon_gallery-delete"></i>
+		                </a>
+		            </div>
+		        </div>   
+
+		      
+		    </div>
+		    
+    		<div class="weui-cells__title">基本信息</div>	
+			<div class="weui-cells weui-cells_form">
+				<div class="weui-cell">
+					<div class="weui-cell__hd">
+						<label for="" class="weui-label">考生姓名</label>
+					</div>
+					<div class="weui-cell__bd">
+						<input class="weui-input" type="text" value="" placeholder="*请输入考生姓名">
+					</div>
+				</div>
+				<div class="weui-cell">
+					<div class="weui-cell__hd">
+						<label for="" class="weui-label">身份证号</label>
+					</div>
+					<div class="weui-cell__bd">
+						<input class="weui-input" type="text" value="" placeholder="*请输入考生身份证号">
+					</div>
+				</div>
+				<!--<div class="weui-cell">
+			        <div class="weui-cell__hd">
+			        	<label for="" class="weui-label">考生考号</label>
+			        </div>
+			        <div class="weui-cell__bd">
+			        	<input class="weui-input" type="number" pattern="[0-9]*" value="" placeholder="请输入考生考号">
+			        </div>
+			        <div class="weui-cell__ft">
+			        	<i class="weui-icon-warn"></i>
+			        </div>
+			    </div>-->
+				<div class="weui-cell">
+					<div class="weui-cell__hd">
+						<label for="" class="weui-label">联系方式</label>
+					</div>
+					<div class="weui-cell__bd">
+						<input class="weui-input" id="tel" type="tel" pattern="[0-9]*" value="" placeholder="请填写有效联系方式">
+					</div>
+				</div>			    
+
+			</div>
+			
+		    <div class="weui-btn-area">
+		    	<a class="weui-btn weui-btn_primary" href="wsbs_pay.html" id="showTooltips">确定</a>
+		    </div>		
+		</div>    
+	</body>
+</html>
